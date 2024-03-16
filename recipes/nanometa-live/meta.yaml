@@ -1,5 +1,5 @@
 {% set name = "nanometa-live" %}
-{% set version = "0.3.0" %}
+{% set version = "0.4.3" %}
 
 package:
   name: "{{ name|lower }}"
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/FOI-Bioinformatics/nanometa_live/archive/{{ version }}.tar.gz
-  sha256: 47463832d9b9ee95528d72db99d5b1370fc0064159f18931f29be7eae0a8ca86
+  sha256: 9c8e0cb9eddaf8cfde3a752424717447319afd2af357a815e0ba4d4112e58e5c
 
 build:
   number: 0
@@ -45,6 +45,7 @@ requirements:
     - fastp >=0.23.2
     - ruamel.yaml >=0.17.32
     - ncbi-datasets-cli >=15.20.0
+    - tqdm >=4.62.3
 
 test:
   commands:
